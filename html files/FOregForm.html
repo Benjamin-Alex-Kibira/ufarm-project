@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ufarm - Register FO</title>
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center mt-5">Ufarm - Register FO</h1>
+		<form action="" method="post">
+			<fieldset>
+				<legend>FO Information</legend>
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="Enter FO Name" required>
+				</div>
+				<div class="form-group">
+					<label for="ward">Ward:</label>
+					<input type="text" class="form-control" id="ward" name="ward" placeholder="Enter Ward Name" required>
+				</div>
+				<div class="form-group">
+					<label for="fo_number">Unique FO Number:</label>
+					<input type="text" class="form-control" id="fo_number" name="fo_number" placeholder="Enter Unique FO Number" required>
+				</div>
+				<div class="form-group">
+					<label for="registration_date">Date of Registration:</label>
+					<input type="date" class="form-control" id="registration_date" name="registration_date" required>
+				</div>
+				<div class="form-group">
+					<label for="gender">Gender:</label>
+					<select class="form-control" id="gender" name="gender" required>
+						<option value="">Select Gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="dob">Date of Birth:</label>
+					<input type="date" class="form-control" id="dob" name="dob" required>
+				</div>
+				<div class="form-group">
+					<label for="activities">Activities Involved In:</label>
+					<input type="text" class="form-control" id="activities" name="activities" placeholder="Enter Activities Involved In" required>
+				</div>
+				<div class="form-group">
+					<label for="nin">NIN Number:</label>
+					<input type="text" class="form-control" id="nin" name="nin" placeholder="Enter NIN Number (13 characters)" pattern="[a-zA-Z0-9]{13}" required>
+				</div>
+				<div class="form-group">
+					<label for="phone">Phone Number:</label>
+					<input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number" pattern="[0-9]{10}" required>
+				</div>
+				<div class="form-group">
+					<label for="directions">Directions to Home:</label>
+					<textarea class="form-control" id="directions" name="directions" placeholder="Enter Directions to Home" rows="3" required></textarea>
+				</div>
+				<div class="form-group">
+					<label for="residence">Residence Type:</label>
+					<input type="text" class="form-control" id="residence" name="residence" placeholder="Enter Residence Type" required>
+				</div>
+				<div class="form-group">
+<label for="stay_period">Period of Stay in Ward (years):</label>
+<input type="number" class="form-control" id="stay_period" name="stay_period" placeholder="Enter Period of Stay in Ward" min="10" required>
+</div>
+</fieldset>
+<fieldset>
+<legend>Authentication Details</legend>
+<div class="form-group">
+<label for="username">Username:</label>
+<input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" required>
+</div>
+<div class="form-group">
+<label for="password">Password:</label>
+<input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
+</div>
+<div class="form-group">
+<label for="confirm_password">Confirm Password:</label>
+<input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+</div>
+</fieldset>
+<div class="form-group text-center">
+<button type="submit" class="btn btn-primary">Register FO</button>
+</div>
+</form>
+</div>
+<!--Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
