@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UFarm Initiative - Farmer Registration</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		body {
+			background-color: #f8f9fa;
+		}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">UFarm Initiative</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Register as Farmer</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Order Produce</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Learn More</a>
+    </li>
+  </ul>
+  <button class="btn btn-success ml-auto" type="button">Login</button>
+</nav>
+<div class="container mt-4">
+	<h3>Farmer Registration Form</h3>
+	<form>
+		<div class="form-group">
+			<label for="name">Name:</label>
+			<input type="text" class="form-control" id="name">
+		</div>
+		<div class="form-group">
+			<label for="gender">Gender:</label>
+			<select class="form-control" id="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="dob">Date of Birth:</label>
+			<input type="date" class="form-control" id="dob">
+		</div>
+		<div class="form-group">
+			<label for="activities">Activities Undertaken:</label>
+			<input type="text" class="form-control" id="activities">
+		</div>
+		<div class="form-group">
+			<label for="contact">Contact Information:</label>
+			<input type="text" class="form-control" id="contact">
+		</div>
+		<div class="form-group">
+			<label for="nin">NIN:</label>
+			<input type="text" class="form-control" id="nin">
+		</div>
+		<div class="form-group">
+			<label for="ward">Ward Name:</label>
+			<input type="text" class="form-control" id="ward">
+		</div>
+		<div class="form-group">
+			<label for="unique_id">Unique ID:</label>
+			<input type="text" class="form-control" id="unique_id">
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+</body>
+</html>
